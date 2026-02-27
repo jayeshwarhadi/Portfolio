@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+body{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 5px;
+    grid-template-rows: auto 30px;
+    padding: 5px;
+
+    background-color: green;
+    color: white;
+    font-family: "Electrolize",sans-serif;
+}
+.profile{
+    width: 200px;
+}
+/* Navigation */
+nav{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    background-color: black;
+}
+nav>ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 5px solid green;
+    box-sizing: border-box;
+}
+.highlights{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
