@@ -165,3 +165,31 @@ nav>ul{
     background-position: 0% 50%;
   }
 }
+
+@media (max-width: 750px) {
+    nav>ul{
+        display: none;
+    }
+    .highlights{
+        grid-row: 1/3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+    .sitemap , .socials {
+        display: none;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+}
