@@ -29,12 +29,15 @@ body{
 .btn:hover{
     background-color: #02eb55;
 }
-.btn_hollow{
+.btn_hcontainer > li > a{
     padding: 5px 10px;
     transition: 0.2s;
 }
-.btn_hollow:hover{
+.btn_hcontainer > li > a:hover{
     background-color: #018c33;
+}
+.imp{
+    color: #02eb55 !important;
 }
 .profile{
     width: 25vh;
@@ -97,11 +100,6 @@ nav>ul{
     justify-content: center;
     gap: 20px;
 }
-.work>ul{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
 .services{
     background-color: black;
     grid-column: 1/-1;
@@ -145,6 +143,7 @@ nav>ul{
 .fcenter{
     display: flex;
     justify-content: center;
+    gap: 10px;
     align-items: center;
     flex-direction: column;
 }
