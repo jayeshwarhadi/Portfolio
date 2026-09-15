@@ -2,12 +2,17 @@
   padding: 0;
   margin: 0;
 }
+:root {
+  --themeBg: black;
+  --themeClr: white;
+  --footerBg: rgb(5, 35, 11);
+}
 li {
   list-style: none;
 }
 a {
   text-decoration: none;
-  color: white;
+  color: var(--themeClr);
   cursor: crosshair;
 }
 body {
@@ -19,7 +24,7 @@ body {
   box-sizing: border-box;
 
   background-color: green;
-  color: white;
+  color: var(--themeClr);
   font-family: "Electrolize", sans-serif;
 }
 .btn {
@@ -57,17 +62,17 @@ nav > ul {
   align-items: center;
   box-sizing: border-box;
   padding: 0 5rem;
-  background-color: black;
+  background-color: var(--themeBg);
 }
 .highlights {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 5rem;
-  background-color: black;
+  background-color: var(--themeBg);
 }
 .hero {
-  background-color: black;
+  background-color: var(--themeBg);
   grid-column: 1/-1;
 
   display: flex;
@@ -81,7 +86,7 @@ nav > ul {
   gap: 20px;
 }
 .about {
-  background-color: black;
+  background-color: var(--themeBg);
   grid-column: 1/-1;
 
   display: flex;
@@ -93,7 +98,7 @@ nav > ul {
   width: 100%;
 }
 .work {
-  background-color: black;
+  background-color: var(--themeBg);
   grid-column: 1/-1;
 
   display: flex;
@@ -103,7 +108,7 @@ nav > ul {
   gap: 20px;
 }
 .services {
-  background-color: black;
+  background-color: var(--themeBg);
   grid-column: 1/-1;
 
   display: flex;
@@ -111,7 +116,7 @@ nav > ul {
   justify-content: center;
 }
 .connect {
-  background-color: black;
+  background-color: var(--themeBg);
   grid-column: 1/-1;
 
   display: flex;
@@ -120,7 +125,7 @@ nav > ul {
   gap: 10px;
 }
 .footer {
-  background-color: rgb(5, 35, 11);
+  background-color: var(--footerBg);
   grid-column: 1/-1;
   padding: 5vh 0;
 
