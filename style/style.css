@@ -1,11 +1,16 @@
 * {
   padding: 0;
   margin: 0;
+  cursor: default;
 }
 :root {
   --themeBg: black;
   --themeClr: white;
   --footerBg: rgb(5, 35, 11);
+  --dimmed: rgb(134, 134, 134);
+}
+.dimmed {
+  color: var(--dimmed);
 }
 li {
   list-style: none;
@@ -17,10 +22,10 @@ a {
 }
 body {
   display: grid;
-  grid-template-columns: 25vh 1fr;
-  grid-template-rows: auto auto 65vh 30vh 98vh 30vh 5vh 40vh;
-  gap: 5px;
-  padding: 5px;
+  grid-template-columns: 20vh 1fr;
+  grid-template-rows: auto auto auto 65vh 30vh 98vh 30vh 5vh 40vh;
+  gap: 2px;
+  padding: 2px;
   box-sizing: border-box;
 
   background-color: green;
@@ -29,14 +34,14 @@ body {
 }
 .btn {
   background-color: #018c33;
-  padding: 5px 10px;
+  padding: 2px 10px;
   transition: 0.2s;
 }
 .btn:hover {
   background-color: #02eb55;
 }
 .btn_hcontainer > li > a {
-  padding: 5px 10px;
+  padding: 2px 10px;
   transition: 0.2s;
 }
 .btn_hcontainer > li > a:hover {
@@ -46,15 +51,20 @@ body {
   color: #02eb55 !important;
 }
 .profile {
-  width: 25vh;
+  width: 20vh;
   grid-row: 1/3;
 }
 /* Navigation */
 nav {
   grid-row: 1/3;
   display: grid;
-  gap: 5px;
-  grid-template-rows: repeat(2, 1fr);
+  gap: 2px;
+  grid-template-rows: auto repeat(2, 1fr);
+}
+nav > p {
+  color: #018c33;
+  background-color: var(--themeBg);
+  text-align: center;
 }
 nav > ul {
   display: flex;
@@ -71,9 +81,20 @@ nav > ul {
   padding: 0 5rem;
   background-color: var(--themeBg);
 }
+.preHero {
+  background-color: var(--themeBg);
+  grid-column: 1/3;
+
+  display: flex;
+  justify-content: space-around;
+}
+.preHero > p {
+  color: #018c33;
+}
 .hero {
   background-color: var(--themeBg);
   grid-column: 1/-1;
+  padding-top: 4rem;
 
   display: flex;
   align-items: center;
@@ -81,9 +102,30 @@ nav > ul {
   flex-direction: column;
   gap: 20px;
 }
+.hero > h2 > span {
+  color: #018c33;
+}
 .hero_buttons {
   display: flex;
   gap: 20px;
+}
+.hero_footer {
+  margin-top: auto;
+  margin-left: auto;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  text-align: right;
+}
+.info {
+  padding-top: 2rem;
+}
+.info > ul > li {
+  width: 90vw;
+  background-color: var(--footerBg);
+  margin-top: 4px;
+
+  display: flex;
+  justify-content: space-between;
 }
 .about {
   background-color: var(--themeBg);
@@ -111,8 +153,13 @@ nav > ul {
   background-color: var(--themeBg);
   grid-column: 1/-1;
 
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.services > div {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: start;
   justify-content: center;
 }
 .connect {
