@@ -32,6 +32,10 @@ format. It serves as an online resume and project showcase.
 ## ✨ Features
 
 - Clean Layout
+- Projects Showcase
+- Working Statistics
+- Skills Showcase
+- Innovative Design
 
 ---
 
