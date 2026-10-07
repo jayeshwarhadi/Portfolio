@@ -161,6 +161,10 @@ nav > ul {
   flex-direction: column;
   align-items: start;
   justify-content: center;
+  padding-left: 4%;
+}
+.services > div > h2 {
+  color: #018c33;
 }
 .connect {
   background-color: var(--themeBg);
